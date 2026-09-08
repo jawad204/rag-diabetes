@@ -1,0 +1,111 @@
+[
+  {
+    "question": "I get shaky and sweaty between meals. What is that?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia#chunk-4"],
+    "note": "symptoms of hypoglycemia, described not named"
+  },
+  {
+    "question": "What should I eat right away if my sugar drops too low?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia#chunk-16"],
+    "note": "treating low blood glucose"
+  },
+  {
+    "question": "Does diabetes make a heart attack more likely?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke#chunk-1"],
+    "note": ""
+  },
+  {
+    "question": "How do I know if I'm having a stroke?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke#chunk-28"],
+    "note": ""
+  },
+  {
+    "question": "Can diabetes make me go blind?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-eye-disease#chunk-0",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-eye-disease#chunk-2"
+    ],
+    "note": "heavy paraphrase - 'blind' does not appear in the header"
+  },
+  {
+    "question": "My vision went blurry suddenly, should I worry?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-eye-disease#chunk-16"],
+    "note": "'when should I see a doctor right away'"
+  },
+  {
+    "question": "Why do my gums bleed when I brush?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/gum-disease-dental-problems#chunk-9",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/gum-disease-dental-problems#chunk-5"
+    ],
+    "note": "no keyword overlap with 'mouth problems'"
+  },
+  {
+    "question": "How do I look after my teeth with diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/gum-disease-dental-problems#chunk-13"],
+    "note": "'teeth' vs the document's 'mouth'"
+  },
+  {
+    "question": "Can diabetes cause erection problems?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems#chunk-6"],
+    "note": ""
+  },
+  {
+    "question": "I'm leaking urine, is that related to my diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems#chunk-21"],
+    "note": "'leaking urine' vs 'bladder problems'"
+  },
+  {
+    "question": "My hands and feet feel numb and tingly.",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies#chunk-1"],
+    "note": "symptom description, not a question - tests robustness"
+  },
+  {
+    "question": "Does exercise actually help with diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes#chunk-14"],
+    "note": "'exercise' vs the document's 'physical activity'"
+  },
+  {
+    "question": "Should I stop smoking if I'm diabetic?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes#chunk-32"],
+    "note": ""
+  },
+  {
+    "question": "Diabetes is making me feel down. Is that normal?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes#chunk-33"],
+    "note": "mental health, phrased emotionally"
+  },
+  {
+    "question": "How do I keep my feet from getting hurt?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems#chunk-4"],
+    "note": "prevention, distinct from the 'how does diabetes affect feet' question in set 1"
+  },
+  {
+    "question": "Is there a machine that gives insulin automatically?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas#chunk-0",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas#chunk-3"
+    ],
+    "note": "describes an artificial pancreas without naming it"
+  },
+  {
+    "question": "Can you transplant cells to cure type 1 diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments/pancreatic-islet-transplantation#chunk-1"],
+    "note": ""
+  },
+  {
+    "question": "Am I at risk of getting type 2 diabetes because of my weight?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes#chunk-4"],
+    "note": ""
+  },
+  {
+    "question": "What A1C number should I be aiming for?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test#chunk-23"],
+    "note": "distinct from set 1's general A1C question"
+  },
+  {
+    "question": "After the baby comes, will I get diabetes again later?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/after-your-baby-is-born#chunk-1"],
+    "note": ""
+  }
+]

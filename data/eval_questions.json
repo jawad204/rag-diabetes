@@ -1,0 +1,104 @@
+[
+  {
+    "question": "I keep needing to pee a lot and I'm always thirsty. Could this be type 1 diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes#chunk-12"],
+    "note": "paraphrase of 'What are the symptoms of type 1 diabetes?'"
+  },
+  {
+    "question": "Why do people get type 2 diabetes in the first place?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes#chunk-5",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#chunk-11"
+    ],
+    "note": "two valid chunks - NIDDK covers this on two pages"
+  },
+  {
+    "question": "Is gestational diabetes dangerous for my baby?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/definition-facts#chunk-1"],
+    "note": "the query that reranking currently breaks"
+  },
+  {
+    "question": "My doctor said I have prediabetes. What does that actually mean?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance#chunk-0"],
+    "note": ""
+  },
+  {
+    "question": "What can I do to avoid getting type 2 diabetes?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes#chunk-11",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes#chunk-3"
+    ],
+    "note": ""
+  },
+  {
+    "question": "What pills are used for type 2 diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes#chunk-8"],
+    "note": "'pills' vs the document's 'medicines' - tests the dense side"
+  },
+  {
+    "question": "How do they test you for diabetes while you're pregnant?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/tests-diagnosis#chunk-1"],
+    "note": ""
+  },
+  {
+    "question": "What can go wrong long term if you have type 1 diabetes?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes#chunk-6"],
+    "note": ""
+  },
+  {
+    "question": "How can diabetes affect my feet?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems#chunk-1"],
+    "note": "worded exactly like the header - an easy case, keep one as a baseline"
+  },
+  {
+    "question": "What is the A1C blood test and why do I need it?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test#chunk-0"],
+    "note": ""
+  },
+  {
+    "question": "What is an artificial pancreas?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas#chunk-0"],
+    "note": ""
+  },
+  {
+    "question": "Can I check my sugar without pricking my finger all the time?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring#chunk-0"],
+    "note": "heavy paraphrase - no keyword overlap with 'continuous glucose monitoring'"
+  },
+  {
+    "question": "Can diabetes damage my kidneys?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease#chunk-0"],
+    "note": ""
+  },
+  {
+    "question": "What causes gestational diabetes?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/symptoms-causes#chunk-1",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#chunk-15"
+    ],
+    "note": ""
+  },
+  {
+    "question": "What are the ways you can take insulin?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments#chunk-11"],
+    "note": ""
+  },
+  {
+    "question": "Is there a rare kind of diabetes that runs in families?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/monogenic-neonatal-mellitus-mody#chunk-0"],
+    "note": "paraphrase of monogenic/MODY - tests whether a rare term is findable"
+  },
+  {
+    "question": "How do I take care of type 1 diabetes day to day?",
+    "relevant_ids": ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes#chunk-26"],
+    "note": ""
+  },
+  {
+    "question": "What are the warning signs of diabetes?",
+    "relevant_ids": [
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#chunk-0",
+      "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes#chunk-4"
+    ],
+    "note": ""
+  }
+]

@@ -1,0 +1,12 @@
+# secrets - never commit
+.env
+
+# virtual environment
+.venv/
+
+# python
+__pycache__/
+*.py[cod]
+
+# Qdrant local storage, if you ever switch off Docker
+qdrant_storage/
