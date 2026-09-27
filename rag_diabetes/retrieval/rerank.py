@@ -37,7 +37,7 @@ except ImportError:  # pragma: no cover
     from langchain_classic.retrievers import ContextualCompressionRetriever
     from langchain_classic.retrievers.document_compressors import CrossEncoderReranker
 
-from niddk_hybrid_retriever import build_hybrid_retriever
+from rag_diabetes.retrieval.hybrid import build_hybrid_retriever
 
 RERANKER_MODEL = "BAAI/bge-reranker-base"
 TOP_N = 5

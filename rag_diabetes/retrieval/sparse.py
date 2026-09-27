@@ -28,7 +28,9 @@ from pathlib import Path
 from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
 
-CHUNKS_PATH = Path("data/niddk_chunks_final.jsonl")
+from rag_diabetes.config import CHUNKS_FINAL_PATH
+
+CHUNKS_PATH = CHUNKS_FINAL_PATH
 TOP_K = 3
 
 # Deliberately conservative: only function words and question words.

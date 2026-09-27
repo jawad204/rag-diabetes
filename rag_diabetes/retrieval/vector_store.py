@@ -16,11 +16,16 @@ from langchain_core.embeddings import Embeddings
 from langchain_qdrant import QdrantVectorStore
 from sentence_transformers import SentenceTransformer
 
-CHUNKS_PATH = Path("data/niddk_chunks_final.jsonl")
-QDRANT_URL = "http://localhost:6333"
-COLLECTION_NAME = "niddk_diabetes_chunks"
-MODEL_NAME = "BAAI/bge-small-en-v1.5"
-QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
+from rag_diabetes.config import (
+    CHUNKS_FINAL_PATH,
+    COLLECTION_NAME,
+    EMBEDDING_MODEL,
+    QDRANT_URL,
+    QUERY_INSTRUCTION,
+)
+
+CHUNKS_PATH = CHUNKS_FINAL_PATH
+MODEL_NAME = EMBEDDING_MODEL
 
 
 class BGEEmbeddings(Embeddings):

@@ -1,0 +1,25 @@
+# Makes `rag_diabetes` importable from anywhere once you run:
+#
+#     pip install -e .
+#
+# WHY: without this, `from rag_diabetes...` only works when Python is started
+# from the project root with `python -m`. Running a file directly - which is
+# what VS Code's Run button does - puts that file's own folder on sys.path
+# instead, and the package becomes invisible.
+#
+# `-e` (editable) installs a link to this folder rather than a copy, so your
+# edits take effect immediately with no reinstall.
+
+[project]
+name = "rag-diabetes"
+version = "0.1.0"
+description = "Patient-friendly RAG over NIDDK diabetes patient-education pages"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+# only ship the package; data/, tests/ and venv/ are not part of it
+include = ["rag_diabetes*"]

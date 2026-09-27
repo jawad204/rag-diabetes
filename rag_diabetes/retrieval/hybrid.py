@@ -39,30 +39,36 @@ try:
 except ImportError:  # pragma: no cover
     from langchain_classic.retrievers import EnsembleRetriever
 
-from niddk_bm25_test import build_bm25, load_documents, preprocess
-from niddk_index_qdrant import (
+from rag_diabetes.retrieval.sparse import build_bm25, load_documents, preprocess
+from rag_diabetes.retrieval.vector_store import (
     COLLECTION_NAME,
     QDRANT_URL,
     BGEEmbeddings,
 )
 
-CHUNKS_PATH = Path("data/niddk_chunks_final.jsonl")
+from rag_diabetes.config import (
+    CANDIDATES_PER_RETRIEVER,
+    CHUNKS_FINAL_PATH,
+    DENSE_WEIGHT,
+    SPARSE_WEIGHT,
+    TOP_K,
+)
+
+CHUNKS_PATH = CHUNKS_FINAL_PATH
 
 # How many candidates each retriever contributes before fusion.
 # This is now a RECALL stage feeding the reranker (see
 # niddk_rerank_retriever.py), so we pull wide: the reranker can only
 # reorder what this stage hands it, and anything missed here is gone
 # for good. FINAL_K is only used when running THIS file standalone.
-CANDIDATES_PER_RETRIEVER = 20
-FINAL_K = 5
 
+FINAL_K = TOP_K
 # Relative trust in each retriever. Must sum to 1.0.
 # 0.7/0.3 favours the dense side: patient questions are usually
 # paraphrases ("is it dangerous for my baby") rather than exact medical
 # terminology, which is where embeddings beat keyword matching. BM25
 # still carries 0.3 so exact terms (A1C, "feet", "type 2") stay findable.
-DENSE_WEIGHT = 0.7
-SPARSE_WEIGHT = 0.3
+
 
 TEST_QUERIES = [
     "What foods should I avoid if I have type 2 diabetes?",
