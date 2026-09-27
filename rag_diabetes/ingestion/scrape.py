@@ -13,9 +13,11 @@ import requests
 import trafilatura
 from tqdm import tqdm
 
-from niddk_urls import NIDDK_DIABETES_URLS
+from rag_diabetes.ingestion.urls import NIDDK_DIABETES_URLS
 
-OUTPUT_PATH = Path("data/niddk_pages.jsonl")
+from rag_diabetes.config import PAGES_PATH
+
+OUTPUT_PATH = PAGES_PATH
 HEADERS = {"User-Agent": "Mozilla/5.0 (portfolio RAG project; educational use)"}
 
 

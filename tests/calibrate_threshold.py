@@ -40,7 +40,7 @@ Run: python niddk_calibrate_threshold.py
 from langchain_qdrant import QdrantVectorStore
 from sentence_transformers import CrossEncoder
 
-from niddk_index_qdrant import COLLECTION_NAME, QDRANT_URL, BGEEmbeddings
+from rag_diabetes.retrieval.vector_store import COLLECTION_NAME, QDRANT_URL, BGEEmbeddings
 
 RERANKER_MODEL = "BAAI/bge-reranker-base"
 

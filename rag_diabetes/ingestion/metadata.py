@@ -10,8 +10,10 @@ Run: python niddk_metadata.py
 import json
 from pathlib import Path
 
-INPUT_PATH = Path("data/niddk_chunks.jsonl")
-OUTPUT_PATH = Path("data/niddk_chunks_final.jsonl")
+from rag_diabetes.config import CHUNKS_FINAL_PATH, CHUNKS_PATH
+
+INPUT_PATH = CHUNKS_PATH
+OUTPUT_PATH = CHUNKS_FINAL_PATH
 
 SOURCE = "NIDDK"
 

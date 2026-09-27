@@ -19,16 +19,20 @@ from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
 )
 
-INPUT_PATH = Path("data/niddk_pages.jsonl")
-OUTPUT_PATH = Path("data/niddk_chunks.jsonl")
+from rag_diabetes.config import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    CHUNKS_PATH,
+    MIN_BODY_CHARS,
+    PAGES_PATH,
+)
 
-CHUNK_SIZE = 600
-CHUNK_OVERLAP = 75
+INPUT_PATH = PAGES_PATH
+OUTPUT_PATH = CHUNKS_PATH
 
 # chunks whose content is nothing but a header line / ToC stub (e.g. a
 # section that's empty in the source, or "**On this page:**" leftovers)
 # get dropped after chunking. See MIN_BODY_CHARS below.
-MIN_BODY_CHARS = 40
 
 HEADERS_TO_SPLIT_ON = [
     ("#", "Header 1"),

@@ -24,8 +24,8 @@ Run: python niddk_rerank_retriever.py
 
 from sentence_transformers import CrossEncoder
 
-from niddk_bm25_test import preprocess
-from niddk_hybrid_retriever import build_hybrid_retriever
+from rag_diabetes.retrieval.sparse import preprocess
+from rag_diabetes.retrieval.hybrid import build_hybrid_retriever
 
 RERANKER_MODEL = "BAAI/bge-reranker-base"
 

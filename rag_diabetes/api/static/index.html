@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diabetes Q&A</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Diabetes Q&amp;A</h1>
+  <div class="sub">
+    Answers come only from NIDDK patient-education pages &mdash; types of diabetes, symptoms,
+    tests, treatment, daily management, complications, pregnancy, and help paying for care.
+    Questions outside that are declined. Not medical advice.
+  </div>
+
+  <form id="f">
+    <input id="q" placeholder="e.g. How can diabetes affect my feet?" autocomplete="off" required>
+    <button id="b" type="submit">Ask</button>
+  </form>
+
+  <!-- Example questions. The point is that a new user never has to guess what
+       is in scope, and never has to ask - one click gives them a working query
+       and shows the breadth of the corpus at the same time. -->
+  <div class="examples">
+    <span class="examples-label">Try:</span>
+    <button class="chip" type="button">How can diabetes affect my feet?</button>
+    <button class="chip" type="button">What is the A1C test?</button>
+    <button class="chip" type="button">Is gestational diabetes dangerous for my baby?</button>
+    <button class="chip" type="button">I get shaky and sweaty between meals. What is that?</button>
+    <button class="chip" type="button">Can diabetes damage my kidneys?</button>
+    <button class="chip" type="button">What can I ask you?</button>
+  </div>
+
+  <div id="answer"></div>
+  <div id="sources"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

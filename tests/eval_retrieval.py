@@ -47,8 +47,8 @@ import json
 import sys
 from pathlib import Path
 
-from niddk_hybrid_retriever import build_hybrid_retriever
-from niddk_rerank_lc import build_reranking_retriever
+from rag_diabetes.retrieval.hybrid import build_hybrid_retriever
+from rag_diabetes.retrieval.rerank import build_reranking_retriever
 
 EVAL_PATH = Path("eval_questions.json")
 K = 5
